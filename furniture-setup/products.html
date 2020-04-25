@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>
+Products Section
+</title>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width ,initial-scale=1.0' />
+<meta http-equiv='X-UA-Compatiable' content='ie=edge'>
+<!--Bootstrap CSS-->
+<link href='css/bootstrap.min.css' rel='stylesheet'>
+<!--Custom CSS-->
+<link href='css/css.css' rel='stylesheet'>
+<!--font-asowem-->
+<link href='css/all.css' rel='stylesheet'>
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet" />
+</head>
+<body>
+<!--Start of header-->
+<header>
+<!--Start of navbar-->
+ <nav class='navbar navbar-expand-lg navbar-lights'>
+ <!--Navbar logo-->
+ <div class='navbar-brand'>
+  <a href='#'><img src='img/logo.png'></img></a>
+ </div>
+ <!--Navbar sm screen button-->
+ <button type='button' class='navbar-toggler' data-toggle='collapse' data-target='#mynav'>
+  <i class='fas fa-bars text-warning fa-2x'></i>
+ </button>
+ <!--Navbar items--> 
+
+ <div class='collapse navbar-collapse' id='mynav'>
+  <ul class='navbar-nav mx-auto'>
+   <li class='nav-item'><a href='index.html' class='nav-link text-secondary'>Home</a></li>
+   <li class='nav-item nav-active'><a href='products.html' class='nav-link nav-active text-muted'>Products</a></li>
+   <li class='nav-item'><a href='single.html' class='nav-link text-muted'>Single Product </a></li>
+   <li class='nav-item'><a href='store.html' class='nav-link text-muted'>Store</a></li>
+  </ul>
+ </div>
+ <!--Store and search icon-->
+ <div class='d-none d-lg-flex'>
+  <i class='fas fa-search mr-2 search-icon'></i>
+  <span class=''>
+   <i class='fas fa-shopping-cart cart-icon'></i>
+  <div class='cart-icon-number'>2</div>
+  </span>
+ </div>
+  <!--End of store and search items-->
+ </nav>
+<!--End of nav-->
+<!--Banner products-->
+
+<!--Black letters-->
+ <div class='height products-bg  d-flex align-items-center pl-3 pl-lg-5'>
+  <div>
+   <p class='text-slant mb-0 text-yellow' style='font-size:2.8rem'>Comfy Sloth</p>
+   <p class='' style='font-size:2.4rem'> <b> Our Products</b></p>
+  </div>
+ </div>
+
+<!--End of Banner products-->
+</header>
+<!--End of header-->
+<!--2nd products col-->
+<section class='py-5'>
+<div class='container-fluid'>
+ <div class='row'>
+<!--Shop options-->
+ <div class='col-8 col-md-4 col-lg-3 mx-auto'>
+  <!--Shop by categories-->
+   <div class=''>
+    <!--title-->
+    <h6 class='text-uppercase'>shop by categories <div class='underline-products'></div> </h6>
+	<!--End of title-->
+	<a href='#' class='text-dark mt-5'>kitchen</a><br>
+	<a href='#' class='text-dark'>Bathroom</a><br>
+	<a href='#' class='text-dark'>Living Room</a><br>
+	<a href='#' class='text-dark'>Bedroom</a><br>
+	<a href='#' class='text-dark mb-4'>Patio</a><br>
+   </div>
+  <!--End of shop by categories-->
+  <!--Shop by price-->
+   <div class='py-4'>
+   <!--title-->
+    <h6 class='text-uppercase'>shop by price</h6>
+	<div class='underline-products'></div>
+   <!--End of title-->
+	<form class='py-3'>
+	<div class='form-group'>
+	 <label class='price-range'>Range : $0 - $1000</label>
+	 <input type='range' class='form-control-range' name='price-range'>
+	</div>
+	 <div class='input-group'>
+	  <div class='input-group-prepend'>
+	   <div class='input-group-text'><i class='fas fa-search'></i></div>
+	   <input type='text' class='form-control' placeholder='Search By Name'>
+	  </div>
+	 </div>
+	</form>
+   </div>
+  <!--End of shop by price-->
+  <!--Shop by color-->
+  <div class=''>
+   <!--title-->
+    <h6 class='text-uppercase'>shop by color</h6>
+	<div class='underline-products'></div>
+   <!--End of title-->
+   <!--colors-->
+    <div class='py-3'>
+	 <a href='#'><span class='mr-2 d-inline-block product-color-black'></span>Black (5)</a><br>
+	 <a href='#'><span class='mr-2 d-inline-block product-color-red'></span>Red (5)</a><br>
+	 <a href='#'><span class='mr-2 d-inline-block product-color-blue'></span>Blue (5)</a><br>
+	 <a href='#'><span class='mr-2 d-inline-block product-color-yellow'></span>Yellow (5)</a><br>
+	 <a href='#'><span class='mr-2 d-inline-block product-color-green'></span>Green (5)</a><br>
+	</div>
+   <!--End of colors-->
+  </div>
+  <!--End of shop by color-->
+ </div>
+<!--End of shop options-->
+<!--shop images-->
+<div class='col-10 col-md-7 col-lg-7'>
+<div class='row'>
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-10.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+    </div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+
+   </div>
+  <!--End of single product-->
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-9.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+	</div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+   </div>
+  <!--End of single product-->
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-11.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+	</div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+   </div>
+  <!--End of single product-->
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-12.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+	</div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+   </div>
+  <!--End of single product-->
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-7.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+	</div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+   </div>
+  <!--End of single product-->
+  <!--Single product-->
+   <div class='col-10 col-md-6 col-lg-4 p-4 mx-auto'>
+    <div class='featured-container'>
+	 <img src='img/img-products/product-8.png' class='img-fluid'>
+	 <span class='featured-search' data-toggle='modal' data-target='#mo'><i class='fas fa-search'></i></span>
+	 <a class='featured-atc yellow-btn p-1 mt-2' href='#'>add to cart</a>
+	</div>
+	<h5 class='text-center '>Special Product</h5>
+	<h6 class='text-center '><span style='text-decoration:line-through;'>$200</span><span> $100</span>
+   </div>
+  <!--End of single product-->
+  </div>
+ </div>
+<!--End of shop images-->
+ </div>
+</div>
+</section>
+<!--End of 2nd products col-->
+<!--Carousel-->
+<section class='carousel'>
+ <div class='container py-5' >
+  <div class='row'>
+   <div class='col-md-6 col-lg-3 col-6 mx-auto'>
+    <div id='example' class='carousel slide' data-ride='carousel' data-target='#homecarousel'>
+	 <!--Carousel indicators-->
+	  <ul class='carousel-indicators' id=''>
+	   <li data-slide-to='0' data-target='#example'></li>
+	   <li data-slide-to='1' data-target='#example'></li>
+	   <li data-slide-to='2' data-target='#example'></li>
+	   <li data-slide-to='3' data-target='#example'></li>
+	   <li data-slide-to='4' data-target='#example'></li>
+	   <li data-slide-to='4' data-target='#example'></li>	   
+	 </ul>
+	 <!--End of carousel indicators-->
+	 <!--Carouse inner-->
+	 <div class='carousel-inner'> 
+	 <!--Single carousel-->
+	  <div class='carousel-item active'>
+	   <img src="img/company-logos/company-logo-1.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 <!--Single carousel-->
+	  <div class='carousel-item'>
+	   <img src="img/company-logos/company-logo-2.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 <!--Single carousel-->
+	  <div class='carousel-item'>
+	   <img src="img/company-logos/company-logo-3.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 <!--Single carousel-->
+	  <div class='carousel-item'>
+	   <img src="img/company-logos/company-logo-4.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 <!--Single carousel-->
+	  <div class='carousel-item'>
+	   <img src="img/company-logos/company-logo-5.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 <!--Single carousel-->
+	  <div class='carousel-item'>
+	   <img src="img/company-logos/company-logo-6.png" class="d-block w-100">
+	  </div>
+	 <!--End of single Carousel-->
+	 </div>
+	<!--End of carousel inner-->
+	</div>
+   </div>
+   <!--Carousel button-->
+   <a href='#example' class='carousel-control-prev' data-slide='prev' role='button'><span class='carousel-control-prev-icon'></span><i class='fas fa-arrow-left'></i></a>
+   <a href='#example' class='carousel-control-next' data-slide='next'><i class='fas fa-arrow-right'><span class='carousel-control-next-icon'></span></i></a>
+   <!--End of Carousel button-->
+  </div>
+ </div>
+</section>
+<!--End of carousel-->
+<!--NewsLetter Section-->
+<section class='container newsletter py-5'>
+<div class='row'>
+ <div class='col-10 mx-auto text-center'>
+  <!--Title-->
+  <h1 class='text-uppercase'>newsletter</h1>
+  <p>Lorem ipsum dolor sit amet conssectetur adipisicing ellit. Deleinti blanditiis
+  similique eum, aut culpa maiores cupiditate alias exercitatioem error nesciunt.</p>
+  <!--End of title-->
+  <form>
+  
+   <div class='input-group'>
+    <input type='text' placeholder='Enter Your E-mail' class='form-control'>
+   <div class='input-group-prepend'>
+	 <span class='input-group-text'>
+	 <i class='fas fa-envelope'></i></span>
+    </div>
+   </div>
+  </form>
+  <!--End of form-->
+   <a class='yellow-btn btn' href='#'>Subscribe</a>
+</div>
+</section>
+<!--End of NewsLetter Section-->
+<!--Services2 section-->
+<section>
+ <div class='container-fluid service-2'>
+  <div class='row'>
+  <!--Free shipping-->
+   <div class='col-8 col-md-6 col-lg-4 d-flex mx-auto py-3'>
+   <span class='m-2 text-yellow'><i class='fas fa-truck fa-2x'></i></span>
+   <div>
+    <h2 class='text-uppercase text-white'>Free shipping</h2>
+    <p class='text-capitalize text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, pariatur.</p>
+   </div>
+  </div>
+  <!--End of free shipping-->
+  <!--Price promise-->
+   <div class='col-8 col-md-6 col-lg-4 d-flex mx-auto py-3'>
+   <span class='m-2 text-yellow'><i class='fas fa-comment-dollar fa-2x'></i></span>
+   <div>
+    <h2 class='text-uppercase text-white'>price promise</h2>
+    <p class='text-capitalize text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, pariatur.</p>
+   </div>
+  </div>
+  <!--End of price promise-->
+  <!--Lifetime warranty-->
+   <div class='col-8 col-md-6 col-lg-4 d-flex mx-auto py-3'>
+   <span class='m-2 text-yellow'><i class='fas fa-award fa-2x'></i></span>
+   <div>
+    <h2 class='text-uppercase text-white'>Lifetime warranty</h2>
+    <p class='text-capitalize text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, pariatur.</p>
+   </div>
+  </div>
+  <!--End of lifetime warranty-->
+ </div>
+</section>
+<!--End of services2 section-->
+<!--footer section-->
+<footer class='footer-home py-5'>
+ <div class='container'>
+  <div class='row'>
+   <div class='col-10 text-center mx-auto'>
+    <!--Title footer-->
+	 <h1 class='footer-title text-uppercase'>comfy sloth</h1>
+	<!--End of title footer-->
+	<!--contact web-->
+	 <div class='d-flex justify-content-around text-yellow py-3'>
+	  <a href='#' class='text-yellow py-4'><i class='fab fa-2x fa-facebook'></i></a>
+	  <a href='#' class='text-yellow py-4'><i class='fab fa-2x fa-twitter'></i></a>
+	  <a href='#' class='text-yellow py-4'><i class='fab fa-2x fa-google-plus'></i></a>
+	  <a href='#' class='text-yellow py-4'><i class='fab fa-2x fa-instagram'></i></a>
+	  <a href='#' class='text-yellow py-4'><i class='fab fa-2x fa-youtube'></i></a>
+	 </div>
+	<!--End of contact web-->
+	<p class='text-muted text-capitalize py-4'>lorem ipsum dolor sit amet conseectetur adipisicing elit. vel quas 
+	itaque minima rem esse aut eos inventore numquam nostrum placeat?</p>
+	<!--Address-->
+	<div class=''>
+	 <p><span class='text-yellow pr-3'> <i class='fas fa-1x fa-map'></i></span>  123 Main Street, Los Angeles</P>
+	</div>
+	<!--End of address-->
+	<!--Phone-->
+	<div class=''>
+	 <p><span class='text-yellow pr-3'> <i class='fas fa-1x fa-phone'></i></span> Phone : + (310) 111 2222</P>
+	</div>
+	<!--End of phone-->
+	<!--Address-->
+	<div class=''>
+	 <p><span class='text-yellow pr-3'> <i class='fas fa-1x fa-envelope'></i></span> Email : Email@Email.Com</P>
+	</div>
+	<!--End of address-->
+   </div>
+  </div>
+ </div>
+</footer>
+<!--End of footer section-->
+
+<!--modal-->
+<div class='modal fade' id='mo' tabindex='-1' role='dialog'>
+ <div class='modal-dialog' role='document'>
+ <div class='modal-content'>
+ <!--Modal header-->
+  <div class='modal-header'>
+   <h3 class='text-capitalize'>product info</h3>
+   <button type='button' class='close' data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <!--End of modal header-->
+  <!--Modal body-->
+  <div class='modal-body'>
+   <div class='col mx-auto' >
+    <img src='img/img-products/product-1.png' class='img-fluid'>
+   </div>
+   <!--Stars-->
+   <div class='text-warning'>
+    <i class='fas fa-star'></i>
+    <i class='fas fa-star'></i>
+    <i class='fas fa-star'></i>
+    <i class='fas fa-star'></i>
+    <i class='far fa-star'></i>
+	(25 Customer Reviews)
+   </div>
+   <!--End of stars-->
+   <!--modal title-->
+    <h2 class='text-uppercase'> premium office armchair<br>$10.00-$200.00</h2>
+   <!--End of modal title-->
+   <!--End of title-->
+   <p class='text-muted lead'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+   Commodi, porro.</p>
+   <!--Colors-->
+   <h4> COLORS : <span class='product-color-black d-inline-block'></span>
+   <span class='product-color-red d-inline-block'></span>
+   <span class='product-color-blue d-inline-block'></span>
+   </h4>
+   <!--End of colors-->
+   <!--Sizes-->
+   <h4 class='text-uppercase'>sizes : xs s m l xl</h4>
+   <!--End of sizes-->
+   <!--Buttons-->
+   <div class=''>
+    <h4> <span class='btn btn-black'>-</span>
+	     <span class='btn btn-black'>4</span>
+	     <span class='btn btn-black'>-</span>
+	<button class='btn btn-black bg-white'>Wishlist</button> 
+	<button class='btn yellow-btn'>Add To Cart</button>
+    </h4>
+   </div>
+   <!--End of buttons-->
+  </div>
+  <!--End of modal body-->
+  <!--Modal footer-->
+ <div class="modal-footer">
+   <button type="button" class="btn btn-danger" data-dismiss="modal">close modal</button>
+ </div>
+  <!--End of modal footer-->
+  </div>
+ </div>
+</div>
+<!--End of modal-->
+
+
+<!--jquery-->
+<script src='js/jquery-3.3.1.min.js'></script>
+<!--Bootstrap Js-->
+<script src='js/bootstrap.bundle.min.js'></script>
+</body>
+</html>

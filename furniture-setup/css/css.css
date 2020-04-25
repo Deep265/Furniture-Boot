@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+:root{
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+body{
+	font-family: "Mali", cursive;
+}
+/*Global*/
+.text-slant{
+	font-family: 'Calligraffitti', cursive;
+}
+.yellow-btn{
+	background: var(--mainYellow);
+	color: var(--mainBlack) !important;
+	border-radius: 0;
+}
+.yellow-btn:hover{
+    	background: var(--mainBlack);
+		color: var(--mainYellow) !important;
+}
+.height{
+	min-height: 100vh;
+}
+.text-yellow{
+	color: var(--mainYellow);
+}
+.btn-black{
+	border: 0.1rem solid black;
+	border-radius: 0;
+}
+.btn-black:hover{
+	background: black !important;
+	color: white;
+}
+/*Navbar index*/
+.nav-link{
+	font-size: 1.6rem !important;
+	color: #9b9999;
+}
+.nav-active{
+	border-bottom: 0.1rem solid var(--mainYellow);
+}
+.navbar-toggler{
+	outline: none !important;
+}
+.search-icon{
+	font-size: 1.6rem;
+}
+.cart-icon{
+	position: relative;
+	font-size: 1.6rem;
+}
+.cart-icon-number{
+	color: white;
+	position: absolute;
+	top: 17px;
+	font-size: 0.8rem;
+	border: 0.1rem solid var(--mainYellow);
+	border-radius: 0.8rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+	right: 5px;
+	background: var(--mainYellow);
+}
+.navbar-lights{
+	background: var(--mainWhite) !important;
+}
+/*Banner*/
+.img-background{
+	position: relative;
+	background: url('../img/pageBcg/bannerBcg.jpeg')center/cover fixed no-repeat;
+}
+/*Services*/
+.services-home{
+	color: var(--mainYellow);
+	background-color: var(--mainGrey);
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 50%;
+	margin-bottom: 0.8rem;
+}
+/*Product Categories*/
+.border-50{
+	color: balck !important;
+	border-bottom: 0.1rem solid var(--mainYellow);
+	text-decoration: none !important;
+}
+
+.category-container{
+	position: relative;
+}
+.img-category-items{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background-color: var(--mainWhite); 
+	opacity: 0;
+	clip-path: polygon(0 0,80% 0,100% 100%,0 100%);
+	transition: all 1s linear;
+	padding: 0.2rem 3rem 0.2rem 0.2rem;
+	display: inline-block;
+}
+.category-img{
+	transition: all 1s linear;
+}
+.category-img:hover{
+	opacity: 0.5;
+}
+.category-container:hover .img-category-items{
+	opacity: 1;
+}
+.category-link{
+	color: var(--mainBlack);
+	text-decoration: none !important;
+}
+.category-link:hover{
+	color: var(--mainGrey);
+	
+}
+/* Home Filler*/
+.home-filler-img{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/home-filler.jpeg')center/cover fixed no-repeat;
+	min-height: 60vh;
+}
+.home-filler-btn{
+	color: var(--mainYellow);
+}
+.text-underline{
+	height: 0.1rem;
+	background-color: var(--mainYellow) !important;
+	width: 10%;
+}
+.home-filler-btn:hover{
+	color: var(--mainGrey) !important;
+	text-decoration: none !important;
+}
+/*Featured */
+.featured-container{
+	position: relative;
+	background: var(--TransGrey);
+	padding: 1rem;
+    overflow: hidden;
+}
+.featured-search{
+	position: absolute;
+	top: 45%;
+	right: 0;
+	background: var(--mainWhite);
+	display: inline-block;
+	padding: 0.5rem;
+	transform: translateX(110%);
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.featured-atc{
+	position: absolute;
+	top: 60%;
+	right: 0;
+	transform: translateX(110%);
+	transition: all 1s ease-in-out;
+}
+.featured-container:hover .featured-search{
+	transform: translateX(0);
+}
+.featured-container:hover .featured-atc{
+	transform: translateX(0);
+}
+/*carousel*/
+.carousel{
+	background: ThreeDFace;
+}
+/*Newsletter section*/
+.input-group-text{
+	background: ThreeDLightShadow;
+}
+/*services-2*/
+.service-2{
+	background: var(--mainBlack);
+}
+/*footer*/
+.footer-title{
+	color: var(--mainYellow);
+	border: 0.2rem solid var(--mainYellow);
+	display: inline-block;
+	padding: 0.3rem;
+}
+.footer-home{
+	background: rgba(0,0,0,0.8);
+}
+/*##################Products###################*/
+.products-bg{
+	background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)), url('../img/pageBcg/productsBcg.jpeg')center/cover fixed no-repeat;
+	min-height: 60vh;
+}
+.underline-products{
+    background: var(--mainYellow);
+	width:20%;
+	height: 0.2rem;
+}
+.product-color-black{
+	background: black;
+	width: 1rem;
+	height: 1rem;
+}
+.product-color-red{
+	background: red;
+	width: 1rem;
+	height: 1rem;
+}
+.product-color-blue{
+	background: blue;
+	width: 1rem;
+	height: 1rem;
+}
+.product-color-yellow{
+	background: yellow;
+	width: 1rem;
+	height: 1rem;
+}
+.product-color-green{
+	background: green;
+	width: 1rem;
+	height: 1rem;
+}
